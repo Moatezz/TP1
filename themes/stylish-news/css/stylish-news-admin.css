@@ -1,0 +1,194 @@
+/* STYLISH NEWS ADMIN CSS */
+.stylish-news-adm {
+
+}
+
+.button-youtube {
+	background: #e00909 !important;
+	border-color: #e00909 !important;
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 14px !important;
+}
+
+.stylish-news-adm .theme-upgrade{
+	background: #fff;
+    border: 1px solid #ababab;
+}
+
+.stylish-news-adm .theme-upgrade table{
+
+}
+
+.stylish-news-adm .theme-upgrade table .theme-table-head{
+
+}
+
+.stylish-news-adm .theme-upgrade table .theme-table-head tr {
+
+}
+
+.stylish-news-adm .theme-upgrade table .theme-table-head tr th {
+
+}
+
+.stylish-news-adm .theme-upgrade table .theme-table-head tr th:nth-child(1) {
+	background: #353535;
+}
+
+.stylish-news-adm .theme-upgrade table .theme-table-head tr th:nth-child(2) {
+	background: #000;
+	text-align: center;
+}
+
+.stylish-news-adm .theme-upgrade table .theme-table-head tr th:nth-child(3) {
+	background: blue;
+	text-align: center;
+}
+
+.stylish-news-adm .theme-upgrade table .theme-table-head tr th h3{
+	font-size: 19px;
+    color: #fff;
+    margin: 10px 20px;
+    /*text-align: left;*/
+}
+
+.stylish-news-adm .theme-upgrade table tbody{
+
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr {
+
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr td{
+
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr td .number-index-styles{
+	font-weight: 800;
+    font-size: 21px;
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr td:nth-child(2){
+	text-align: center;
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr td:nth-child(3){
+	text-align: center;
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr td .dashicons-no {
+	color: #e32828;
+	font-size: 28px;
+}
+
+
+.stylish-news-adm .theme-upgrade table tbody tr td .dashicons-yes {
+	color: #10d710;
+	font-size: 28px;
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr .feature-items-title {
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 1.3;
+	font-size: 14px;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr .go-pro .link {
+	display: inline-block;
+    background: #10d710;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr td h3{
+
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr td a{
+
+}
+
+.stylish-news-adm .theme-upgrade table tbody tr td span{
+
+}
+
+.stylish-news-adm .header-welcome{
+	font-size: 42px;
+	font-weight: 500;
+	line-height: 45px;
+	color: #353535;
+	margin-bottom: 20px;
+}
+
+.stylish-news-adm h4{
+	font-size: 19px;
+}
+
+.stylish-news-adm .theme-opt {}
+
+.stylish-news-adm .theme-para {
+	background: #fff;
+    border: 1px solid #ababab;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.stylish-news-adm .theme-para p{
+	font-size: 15px;
+	line-height: 1.5;
+    color: #353535;
+}
+
+
+.stylish-news-adm .theme-para p a{}
+
+.stylish-news-adm-dsply-fl {
+	display: flex;
+}
+
+.stylish-news-adm-jc-sp-btw {
+	justify-content: space-between;
+}
+
+.stylish-news-adm-fl-wrap {
+	flex-wrap: wrap;
+}
+
+.stylish-news-adm-wid-100 {
+	width: 100%;
+}
+
+.stylish-news-adm-wid-99 {
+	width: 99%;
+}
+
+.stylish-news-adm-wid-49 {
+	width: 49%;
+}
+
+.stylish-news-adm-wid-33 {
+	width: 33%;
+}
+
+@media only screen and (max-width: 420px) { 
+
+
+	.stylish-news-adm-mobwid-100 {
+		width: 100%;
+	}
+
+
+
+}
