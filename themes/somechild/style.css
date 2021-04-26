@@ -27,25 +27,42 @@
   margin: 2rem;
 }
 
+.bnb-text-static-container {
+     padding: 0 .8rem 0 .5rem;
+  background-color: red;
+  z-index: 901;
+
+}
 .bnb-text-static {
   font-family: 'Antonio', sans-serif;
   color: white;
   font-size: 2rem;
-  margin-left: 1rem;
+ 
   min-width: max-content;
+  animation: fadeIn ease-in-out .5s infinite;
 }
 .bnb-text {
   display: flex;
   flex-direction: row;
-  animation: floatText 30s linear infinite;
+  animation: horizontalText 30s linear infinite;
 }
 .bnb-text-target {
   min-width: max-content;
   margin: 0 1rem;
   color: white;
 }
-@keyframes floatText {
+@keyframes horizontalText {
   to {
     transform: translateX(-100%);
   }
 }
+
+@keyframes fadeIn{
+
+  100% {
+    opacity:1;
+  }
+    0% {
+    opacity:.5;
+  }
+  

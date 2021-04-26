@@ -99,9 +99,9 @@
 				<!-- START BREAKING NEWS BAR -->
 				<div class="bnb">
 					<div class="bnb-container">
-
-						<p class="bnb-text-static">BREAKING NEWS</p>
-
+						<div class="bnb-text-static-container">
+							<p class="bnb-text-static">BREAKING NEWS</p>
+						</div>
 						<div class="bnb-text">
 							<?php
 							$args = array(
@@ -123,6 +123,7 @@
 							array_map('dumping', $posts_list)
 							?>
 						</div>
+
 					</div>
 
 				</div>
