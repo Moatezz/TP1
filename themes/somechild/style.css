@@ -28,18 +28,17 @@
 }
 
 .bnb-text-static-container {
-     padding: 0 .8rem 0 .5rem;
+  padding: 0 0.8rem 0 0.5rem;
   background-color: red;
   z-index: 901;
-
 }
 .bnb-text-static {
   font-family: 'Antonio', sans-serif;
   color: white;
   font-size: 2rem;
- 
+
   min-width: max-content;
-  animation: fadeIn ease-in-out .5s infinite;
+  animation: fadeIn ease-in-out 0.5s infinite;
 }
 .bnb-text {
   display: flex;
@@ -57,12 +56,11 @@
   }
 }
 
-@keyframes fadeIn{
-
+@keyframes fadeIn {
   100% {
-    opacity:1;
+    opacity: 1;
   }
-    0% {
-    opacity:.5;
+  0% {
+    opacity: 0.5;
   }
-  
+}
