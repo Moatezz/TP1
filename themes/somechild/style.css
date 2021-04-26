@@ -7,3 +7,62 @@
  Version:      1.0.0
   
 */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&display=swap');
+.global-nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.bnb-container {
+  padding: 0 0 0.3rem 0;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nav-container {
+  margin: 2rem;
+}
+
+.bnb-text-static-container {
+     padding: 0 .8rem 0 .5rem;
+  background-color: red;
+  z-index: 901;
+
+}
+.bnb-text-static {
+  font-family: 'Antonio', sans-serif;
+  color: white;
+  font-size: 2rem;
+ 
+  min-width: max-content;
+  animation: fadeIn ease-in-out .5s infinite;
+}
+.bnb-text {
+  display: flex;
+  flex-direction: row;
+  animation: horizontalText 30s linear infinite;
+}
+.bnb-text-target {
+  min-width: max-content;
+  margin: 0 1rem;
+  color: white;
+}
+@keyframes horizontalText {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeIn{
+
+  100% {
+    opacity:1;
+  }
+    0% {
+    opacity:.5;
+  }
+  
