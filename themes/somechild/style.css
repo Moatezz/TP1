@@ -17,6 +17,10 @@
 .bnb-container {
   padding: 0 0 0.3rem 0;
   background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
 }
 
 .nav-container {
@@ -28,4 +32,20 @@
   color: white;
   font-size: 2rem;
   margin-left: 1rem;
+  min-width: max-content;
+}
+.bnb-text {
+  display: flex;
+  flex-direction: row;
+  animation: floatText 30s linear infinite;
+}
+.bnb-text-target {
+  min-width: max-content;
+  margin: 0 1rem;
+  color: white;
+}
+@keyframes floatText {
+  to {
+    transform: translateX(-100%);
+  }
 }
