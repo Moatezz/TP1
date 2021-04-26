@@ -99,22 +99,33 @@
 				<!-- START BREAKING NEWS BAR -->
 				<div class="bnb">
 					<div class="bnb-container">
+
 						<p class="bnb-text-static">BREAKING NEWS</p>
+
+						<div class="bnb-text">
+							<?php
+							$args = array(
+								'category' => 'cat',
+								'numberposts' => -1
+							);
+							function dumping($target)
+							{
+								echo '<div class="bnb-text-target">' . $target->post_title . '</div>';
+							}
+							$posts_list = get_posts($args);
+
+							//	var_dump($posts_list);
+
+							//	foreach ($posts_list as $p) {
+
+							//		echo  $p;
+							//	}
+							array_map('dumping', $posts_list)
+							?>
+						</div>
 					</div>
+
 				</div>
-			</div>
-			<div>
-				<?php
-				$args = array(
-					'numberposts'  => 5,
-					'category' => 4
-				);
-
-				$posts_list = get_post($args);
-				echo $posts_list->post_title;
-				//var_dump($post_list);
-
-				?>
 			</div>
 			<!-- END BREAKING NEWS BAR -->
 		<?php } ?>
