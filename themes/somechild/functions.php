@@ -13,3 +13,10 @@ function my_theme_enqueue_styles() {
     );
 }
 
+function test() {
+    if(is_front_page(  )) {
+        echo "halva";
+    }
+}
+
+add_action( 'widgets_init', 'test' );
