@@ -104,7 +104,17 @@
 				</div>
 			</div>
 			<div>
+				<?php
+				$args = array(
+					'numberposts'  => 5,
+					'category' => 4
+				);
 
+				$posts_list = get_post($args);
+				echo $posts_list->post_title;
+				//var_dump($post_list);
+
+				?>
 			</div>
 			<!-- END BREAKING NEWS BAR -->
 		<?php } ?>
