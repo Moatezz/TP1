@@ -64,3 +64,20 @@
     opacity: 0.5;
   }
 }
+/***********************
+POST DESCRIPTION STYLING
+************************/
+.post-desc {
+}
+.post-desc-item {
+}
+.stylish-news-single
+  .inner
+  .blog-2-col-inner
+  .items
+  .items-inner
+  .img-box
+  img:nth-child(1) {
+  max-height: 3rem;
+  max-width: 3rem;
+}
