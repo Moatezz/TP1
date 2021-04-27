@@ -72,8 +72,11 @@
 													<div class="post-desc">
 														<?php
 														$data = get_user_meta(1);
+														$avatar = get_avatar(1);
 														echo "<div  class='post-desc-item'>" . $data['first_name'][0] . " " .  $data['last_name'][0] . '</div>';
-														echo "<div  class='post-desc-item'>" . $data['description'][0]  . '</div>'
+														echo "<div  class='post-desc-item'>" . $data['description'][0]  . '</div>';
+														echo "<div  class='post-desc-avatar'>" . $avatar  . '</div>'
+
 														?>
 
 													</div>
