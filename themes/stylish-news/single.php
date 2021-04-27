@@ -70,21 +70,26 @@
 													</div>
 
 													<div class="post-desc">
-														<div class='post-desc-divider' />
+														<div class='post-desc-divider'></div>
 														<div class="post-desc-flex-container">
+															<?php
+
+															$data = get_user_meta(1);
+															$avatar = get_avatar(1);
+															echo  $avatar
+															?>
 															<div class="post-desc-flex-item">
 																<?php
-																$data = get_user_meta(1);
-																$avatar = get_avatar(1);
-																echo "<div  class='post-desc-item'>" . $data['first_name'][0] . " " .  $data['last_name'][0] . '</div>';
-																echo "<div  class='post-desc-item'>" . $data['description'][0] . '</div>';
+																echo "<div  class='post-desc-name'>" . $data['first_name'][0] . " " .  $data['last_name'][0] . '</div>';
 																?>
 															</div>
-															<?php
-															echo "<div  class='post-desc-flex-item post-desc-avatar'>" . $avatar . '</div>'
-															?>
 														</div>
-														<div class='post-desc-divider' />
+														<div class='post-desc-divider'></div>
+														<?php
+														echo "<div  class='post-desc-item'>" . $data['description'][0] . '</div>';
+														?>
+
+
 													</div>
 
 												</div>

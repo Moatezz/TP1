@@ -67,10 +67,16 @@
 /***********************
 POST DESCRIPTION STYLING
 ************************/
-.post-desc {
+.post-desc-flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.post-desc-item {
+.post-desc-name {
+  font-size: 2rem;
+  margin-left: 1rem;
 }
+
 .stylish-news-single
   .inner
   .blog-2-col-inner
@@ -78,6 +84,12 @@ POST DESCRIPTION STYLING
   .items-inner
   .img-box
   img:nth-child(1) {
-  max-height: 3rem;
-  max-width: 3rem;
+  max-width: 2rem;
+  margin: 0 !important;
+}
+.post-desc-divider {
+  height: 0.2rem;
+  margin: 1rem-;
+  width: 40vw;
+  background-color: #00000050;
 }
