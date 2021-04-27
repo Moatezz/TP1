@@ -75,18 +75,18 @@
 															<?php
 
 															$data = get_user_meta(1);
-															$avatar = get_avatar(1);
-															echo  $avatar
+															$avatar = get_avatar_url(1);
+															echo '<img class="post-desc-avatar" src="' . $avatar . '" />'
 															?>
-															<div class="post-desc-flex-item">
-																<?php
-																echo "<div  class='post-desc-name'>" . $data['first_name'][0] . " " .  $data['last_name'][0] . '</div>';
-																?>
-															</div>
+
+															<?php
+															echo "<div  class='post-desc-name'>" . $data['first_name'][0] . " " .  $data['last_name'][0] . '</div>';
+															?>
+
 														</div>
 														<div class='post-desc-divider'></div>
 														<?php
-														echo "<div  class='post-desc-item'>" . $data['description'][0] . '</div>';
+														echo "<div  class='post-desc-desc'>" . $data['description'][0] . '</div>';
 														?>
 
 
