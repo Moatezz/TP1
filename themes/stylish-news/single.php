@@ -72,11 +72,10 @@
 													<div class="post-desc">
 														<?php
 														$data = get_user_meta(1);
-
-														$output = array($data['first_name'], $data['last_name'], $data['description']);
-														var_dump($output)
-
+														echo "<div  class='post-desc-item'>" . $data['first_name'][0] . " " .  $data['last_name'][0] . '</div>';
+														echo "<div  class='post-desc-item'>" . $data['description'][0]  . '</div>'
 														?>
+
 													</div>
 
 												</div>
