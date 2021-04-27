@@ -76,6 +76,7 @@
 
 															$data = get_user_meta(1);
 															$avatar = get_avatar_url(1);
+															var_dump($data)
 															echo '<img class="post-desc-avatar" src="' . $avatar . '" />'
 															?>
 
