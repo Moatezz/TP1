@@ -71,9 +71,10 @@
 
 													<div class="post-desc">
 														<?php
-														global $authordata;
-														$data = array($authordata->display_name, $authordata->roles);
-														var_dump($data)
+														$data = get_user_meta(1);
+
+														$output = array($data['first_name'], $data['last_name'], $data['description']);
+														var_dump($output)
 
 														?>
 													</div>
