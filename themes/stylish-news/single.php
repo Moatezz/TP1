@@ -73,10 +73,11 @@
 														<div class='post-desc-divider'></div>
 														<div class="post-desc-flex-container">
 															<?php
+															$id = get_the_author_ID();
+															$data = get_user_meta($id);
+															$avatar = get_avatar_url($id);
 
-															$data = get_user_meta(1);
-															$avatar = get_avatar_url(1);
-															var_dump($data)
+															//var_dump($test);
 															echo '<img class="post-desc-avatar" src="' . $avatar . '" />'
 															?>
 
