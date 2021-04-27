@@ -70,7 +70,12 @@
 													</div>
 
 													<div class="post-desc">
-														<?php ?>
+														<?php
+														global $authordata;
+														var_dump($authordata);
+
+
+														?>
 													</div>
 
 												</div>
