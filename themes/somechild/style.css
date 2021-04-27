@@ -8,6 +8,7 @@
   
 */
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .global-nav-container {
   display: flex;
   flex-direction: column;
@@ -75,21 +76,24 @@ POST DESCRIPTION STYLING
 .post-desc-name {
   font-size: 2rem;
   margin-left: 1rem;
+  font-family: 'Lobster', cursive;
+  opacity: 0.7;
 }
 
-.stylish-news-single
-  .inner
-  .blog-2-col-inner
-  .items
-  .items-inner
-  .img-box
-  img:nth-child(1) {
+.post-desc-avatar {
+  content: '';
   max-width: 2rem;
+  max-height: 2rem;
   margin: 0 !important;
 }
 .post-desc-divider {
-  height: 0.2rem;
-  margin: 1rem-;
-  width: 40vw;
-  background-color: #00000050;
+  height: 1px;
+  margin: 1rem;
+  width: 30vw;
+  background-color: #00000090;
+}
+.post-desc-desc {
+  text-indent: 1rem;
+  width: 50%;
+  opacity: 0.6;
 }
