@@ -72,8 +72,8 @@
 													<div class="post-desc">
 														<?php
 														global $authordata;
-														var_dump($authordata);
-
+														$data = array($authordata->display_name, $authordata->roles);
+														var_dump($data)
 
 														?>
 													</div>
