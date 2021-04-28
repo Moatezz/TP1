@@ -17,9 +17,3 @@ function my_theme_enqueue_styles()
         $theme->get('Version') // this only works if you have Version in the style header
     );
 }
-
-function testing()
-{
-    echo 'nothings';
-}
-add_filter('register_sidebar', 'testing', 5000005555);
