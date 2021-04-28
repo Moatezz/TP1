@@ -70,7 +70,12 @@
 													</div>
 
 
-
+													<?php
+													function teting(){
+														require './components/author-description.php'
+													};
+													add_action('after_setup_theme', 'teting');
+													 ?>
 												</div>
 											</div>
 											<div class="tags">
