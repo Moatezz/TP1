@@ -99,11 +99,11 @@
 			</div>
 			<!-- END NAV MENU -->
 			<!-- START Breaking News Bar -->
-			<div class="bnb-container">
-				<div class="bnb-text-static-container">
-					<p class="bnb-text-static">BREAKING NEWS</p>
+			<div class='bnb-container'>
+				<div class='bnb-text-static-container'>
+					<p class='bnb-text-static'>BREAKING NEWS</p>
 				</div>
-				<div class="bnb-text">
+				<div class='bnb-text'>
 					<?php
 					//Setting infinite post titles with the -1 value  
 					$args = array(
@@ -114,7 +114,7 @@
 					// duming() is the function responsable to wrap up every post_title when it is being mapped.
 					function dumping($target)
 					{
-						echo '<div class="bnb-text-target">' . $target->post_title . '</div>';
+						echo "<div class='bnb-text-target'>" . $target->post_title . "</div>";
 					}
 					//Mapping every post list.
 					array_map('dumping', $posts_list)
