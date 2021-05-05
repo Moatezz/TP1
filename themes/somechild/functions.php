@@ -28,7 +28,33 @@ function breaking_news_bar()
 function bnb_test()
 {
 ?>
-
+    <!-- START Breaking News Bar -->
+    <div class='bnb-container'>
+        <div class='bnb-text-static-container'>
+            <p class='bnb-text-static'>BREAKING NEWS</p>
+        </div>
+        <div class='bnb-text'>
+            <?php
+            //Setting infinite post titles with the -1 value  
+            $args = array(
+                'numberposts' => -1
+            );
+            // Using get_posts to query all post titles
+            $posts_list = get_posts($args);
+            // duming() is the function responsable to wrap up every post_title when it is being mapped.
+            function dumping($target)
+            {
+                echo "<div class='bnb-text-target'>" . $target->post_title . "</div>";
+            }
+            //Mapping every post list.
+            array_map('dumping', $posts_list)
+            ?>
+        </div>
+    </div>
+    <!-- END Breaking News Bar -->
+<?php
+}
+add_action('breaking_news_bar', 'bnb_test');
 
 // Author Description hook
 function author_description()
