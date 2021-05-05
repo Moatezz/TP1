@@ -99,6 +99,6 @@
 			</div>
 			<!-- END NAV MENU -->
 			<!-- START Breaking News Bar -->
-			<?php bnb_test() ?>
+			<?php breaking_news_bar() ?>
 			<!-- END Breaking News Bar -->
 		<?php } ?>

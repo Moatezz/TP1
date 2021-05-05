@@ -70,7 +70,7 @@
 													</div>
 
 													<!-- Author Description Area START HERE -->
-													<?php author_desc_test() ?>
+													<?php author_description() ?>
 													<!-- Author Description Area START HERE -->
 												</div>
 											</div>
