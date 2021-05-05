@@ -59,6 +59,8 @@ function bnb_test()
     <!-- END Breaking News Bar -->
 <?php
 }
+add_action('breaking_news_bar', 'bnb_test');
+
 // author desc test function
 function author_desc_test()
 {
@@ -91,3 +93,4 @@ function author_desc_test()
     <!-- Author Description Area START HERE -->
 <?php
 }
+add_action('author_description', 'author_desc_test');
