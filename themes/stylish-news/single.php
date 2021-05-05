@@ -65,10 +65,6 @@
 															<?php endif; ?>
 														</div>
 														<p><?php the_content(); ?></p>
-
-													</div>
-
-												</div>
 											</div>
 											<div class="tags">
 												<?php the_tags(); ?>
