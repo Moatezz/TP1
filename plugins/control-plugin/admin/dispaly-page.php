@@ -9,5 +9,5 @@ function controlpanel_display_page()
 }
 ?>
 <div class="cp-wrapper">
-
+    <p>something</p>
 </div>
