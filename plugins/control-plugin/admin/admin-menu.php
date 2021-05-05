@@ -15,3 +15,5 @@ add_menu_page(
 null
 )
 }
+
+add_action('admin_menu', 'controlpanel_toplevel_menu')
