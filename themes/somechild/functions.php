@@ -23,11 +23,6 @@ function breaking_news_bar()
     do_action('breaking_news_bar');
 }
 
-// Author Description hook
-function author_description()
-{
-    do_action('author_description');
-}
 
 // bnb test function
 function bnb_test()
@@ -60,6 +55,12 @@ function bnb_test()
 <?php
 }
 add_action('breaking_news_bar', 'bnb_test');
+
+// Author Description hook
+function author_description()
+{
+    do_action('author_description');
+}
 
 // author desc test function
 function author_desc_test()
