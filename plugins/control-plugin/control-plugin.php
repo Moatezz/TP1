@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Control Plugin
  * Autor: Moatezz Chabane
- * Text Domain: control-plugin
+ * Text Domain: control-panel
  */
 
 // Exit if accessed directely
