@@ -69,6 +69,7 @@
 
 													</div>
 
+
 													<div class="post-desc">
 														<div class='post-desc-divider'></div>
 														<div class="post-desc-flex-container">
@@ -93,7 +94,6 @@
 
 
 													</div>
-
 												</div>
 											</div>
 											<div class="tags">
