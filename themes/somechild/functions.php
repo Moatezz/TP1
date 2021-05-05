@@ -17,3 +17,9 @@ function my_theme_enqueue_styles()
         $theme->get('Version') // this only works if you have Version in the style header
     );
 }
+function breaking_news_bar() {
+    do_action('breaking_news_bar')
+}
+function author_description() {
+    do_action('author_description')
+}
