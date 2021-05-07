@@ -16,15 +16,6 @@ function controlpanel_display_page()
     <div class="wrap">
         <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
         <button onclick="trigger()">Click</button>
-    </div>
-
-    <script>
-        function trigger() {
-
-        }
-    </script>
-<?php };
-/*
 
         <form action="options.php" method="post">
             <?php
@@ -37,6 +28,6 @@ function controlpanel_display_page()
             ?>
 
         </form>
-*/
+    </div>
 
-?>
+<?php };
