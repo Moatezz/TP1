@@ -12,3 +12,7 @@ function controlpanel_cb_author_desc()
 {
     echo 'anydhing';
 }
+function control_panel_bnb_color_cb()
+{
+    echo 'something i guess!!';
+}
