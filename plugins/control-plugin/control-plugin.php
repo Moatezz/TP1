@@ -18,3 +18,10 @@ if (is_admin()) {
     require_once plugin_dir_path(__FILE__) . 'admin/register-settings.php';
     require_once plugin_dir_path(__FILE__) . 'admin/callbacks.php';
 }
+
+function controlpanel_options_default()
+{
+    return array(
+        'bgcolor' => 'red'
+    );
+}
