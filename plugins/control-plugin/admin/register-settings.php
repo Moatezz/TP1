@@ -7,7 +7,7 @@ function controlpanel_register_settings()
         'controlpanel_options'
     );
     add_settings_section(
-        'conrolpanel_section_bnb',
+        'controlpanel_section_bnb',
         'Breaking News Bar',
         'controlpanel_cb_bnb',
         'control-panel'
@@ -22,8 +22,8 @@ function controlpanel_register_settings()
         'bgcolor_bnb',
         'bgcolor',
         'control_panel_bnb_color_cb',
-        'controlpanel',
-        'controlpanel_section_bnb)',
+        'control-panel',
+        'controlpanel_section_bnb',
         ['id' => 'bgcolor_bnb', 'label' => 'choose a background color:']
     );
 }
