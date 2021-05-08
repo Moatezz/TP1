@@ -3,7 +3,10 @@ if (!defined('ABSPATH')) {
 
     exit;
 }
-
+function controlpanel_vaildate_options($input)
+{
+    return $input;
+}
 function controlpanel_cb_bnb()
 {
     echo 'anydhing';
