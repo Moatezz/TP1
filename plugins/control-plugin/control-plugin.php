@@ -22,7 +22,8 @@ if (is_admin()) {
 function controlpanel_options_default()
 {
     return array(
-        'bgcolor' => 'red'
+        'bg_color' => 'red',
+        'font_color' => 'white'
     );
 }
 //var_dump(controlpanel_options_default());
