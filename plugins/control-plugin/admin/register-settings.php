@@ -21,7 +21,7 @@ function controlpanel_register_settings()
     add_settings_field(
         'bgcolor_bnb',
         'bgcolor',
-        'control_panel_bnb_color_cb',
+        'control_panel_bnb_bgcolor_cb',
         'control-panel',
         'controlpanel_section_bnb',
         ['id' => 'bgcolor_bnb', 'label' => 'choose a background color:']
