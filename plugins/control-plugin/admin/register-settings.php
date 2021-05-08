@@ -20,8 +20,16 @@ function controlpanel_register_settings()
         'controlpanel'
     );
     add_settings_field(
-        'bgcolor_bnb',
         'bgcolor',
+        'Backgroud Color',
+        'control_panel_bnb_bgcolor_cb',
+        'controlpanel',
+        'controlpanel_section_bnb',
+        ['id' => 'bgcolor_bnb', 'label' => 'choose a background color:']
+    );
+    add_settings_field(
+        'font_color',
+        'Font Color',
         'control_panel_bnb_bgcolor_cb',
         'controlpanel',
         'controlpanel_section_bnb',
