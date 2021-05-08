@@ -11,19 +11,19 @@ function controlpanel_register_settings()
         'controlpanel_section_bnb',
         'Breaking News Bar',
         'controlpanel_cb_bnb',
-        'control-panel'
+        'controlpanel'
     );
     add_settings_section(
         'conrolpanel_section_author_desc',
         'Author Description',
         'controlpanel_cb_author_desc',
-        'control-panel'
+        'controlpanel'
     );
     add_settings_field(
         'bgcolor_bnb',
         'bgcolor',
         'control_panel_bnb_bgcolor_cb',
-        'control-panel',
+        'controlpanel',
         'controlpanel_section_bnb',
         ['id' => 'bgcolor_bnb', 'label' => 'choose a background color:']
     );
