@@ -26,6 +26,7 @@ function controlpanel_display_page()
             ?>
 
         </form>
+        <button class="button button-secondry">Reset the wole thing</button>
     </div>
 
 <?php };
