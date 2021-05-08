@@ -62,7 +62,7 @@ function author_description()
     do_action('author_description');
 }
 
-// author desc test function
+// author description test function
 function author_desc_test()
 {
 ?>
