@@ -32,7 +32,7 @@ function bnb_test()
 
     <?php
     $options = get_option('controlpanel_options', controlpanel_options_default());
-    echo '<div class="bnb-container" style="background-color: ' . $options['bgcolor_bnb'] . '">'; ?>
+    echo '<div class="bnb-container" style="background-color: ' . $options['bg_color'] . '">'; ?>
     <div class='bnb-text-static-container'>
         <p class='bnb-text-static'>BREAKING NEWS</p>
     </div>

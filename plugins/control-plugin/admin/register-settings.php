@@ -20,20 +20,20 @@ function controlpanel_register_settings()
         'controlpanel'
     );
     add_settings_field(
-        'bgcolor',
+        'bg_color',
         'Backgroud Color',
         'control_panel_bnb_bgcolor_cb',
         'controlpanel',
         'controlpanel_section_bnb',
-        ['id' => 'bgcolor_bnb', 'label' => 'choose a background color:']
+        ['id' => 'bg_color', 'label' => 'choose a background color:']
     );
     add_settings_field(
         'font_color',
         'Font Color',
-        'control_panel_bnb_bgcolor_cb',
+        'control_panel_bnb_fontcolor_cb',
         'controlpanel',
         'controlpanel_section_bnb',
-        ['id' => 'bgcolor_bnb', 'label' => 'choose a background color:']
+        ['id' => 'font_color', 'label' => 'choose a font color:']
     );
 }
 add_action('admin_init', 'controlpanel_register_settings');

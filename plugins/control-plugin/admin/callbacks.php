@@ -23,8 +23,8 @@ function control_panel_bnb_bgcolor_cb($args)
     $label = isset($args['label']) ? $args['label'] : '';
 
     $value = isset($options[$id]) ? sanitize_text_field($options[$id]) : '';
-    var_dump($options['bgcolor_bnb']);
+    var_dump($options['bg_color']);
 
-    echo '<input id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" type="text" size="40" value="' . $value . '"><br />';
+    echo '<input id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" type="color" value="' . $value . '"><br />';
     echo '<label for="controlpanel_options_' . $id . '">' . $label . '</label>';
 }
