@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Control Plugin
  * Autor: Moatezz Chabane
- * Text Domain: control-panel
+ * Text Domain: controlpanel
  */
 
 // Exit if accessed directely
@@ -25,3 +25,4 @@ function controlpanel_options_default()
         'bgcolor' => 'red'
     );
 }
+//var_dump(controlpanel_options_default());

@@ -11,7 +11,7 @@ function controlpanel_toplevel_menu()
         'Control Panel',
         'Controls',
         'manage_options',
-        'control-panel',
+        'controlpanel',
         'controlpanel_display_page',
         'dashicons-admin-generic',
         null

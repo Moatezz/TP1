@@ -15,14 +15,12 @@ function controlpanel_display_page()
 ?>
     <div class="wrap">
         <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
-
-
         <form action="options.php" method="post">
             <?php
             //output security fields
             settings_fields('controlpanel_options');
             //output setting sections
-            do_settings_sections('control-panel');
+            do_settings_sections('controlpanel');
             // submitting form
             submit_button();
             ?>
