@@ -22,8 +22,13 @@ if (is_admin()) {
 function controlpanel_options_default()
 {
     return array(
+        //Breaking news bar defaults
         'bg_color' => 'red',
-        'font_color' => 'white'
+        'bnb_font_color' => 'white',
+        'text_speed' => 30,
+        //Author description defaults
+        'pseudo_font_color' => 'black',
+        'desc_font_color' => 'black'
     );
 }
 //var_dump(controlpanel_options_default());
