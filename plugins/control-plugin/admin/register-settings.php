@@ -43,5 +43,13 @@ function controlpanel_register_settings()
         'controlpanel_section_bnb',
         ['id' => 'font_color', 'label' => 'Choose a font color']
     );
+    add_settings_field(
+        'text_speed',
+        'Text Speed',
+        'control_panel_bnb_range_cb',
+        'controlpanel',
+        'controlpanel_section_bnb',
+        ['id' => 'text_speed', 'label' => 'speed is by seconds']
+    );
 }
 add_action('admin_init', 'controlpanel_register_settings');
