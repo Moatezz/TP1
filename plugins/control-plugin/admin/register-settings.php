@@ -70,7 +70,7 @@ function controlpanel_register_settings()
     add_settings_field(
         'description',
         'Description',
-        'controlpanel_text_field_cb',
+        'controlpanel_text_area_cb',
         'controlpanel',
         'conrolpanel_section_author_desc',
         ['id' => 'description', 'label' => 'Add your own description']

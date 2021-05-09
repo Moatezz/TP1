@@ -53,3 +53,16 @@ function controlpanel_text_field_cb($args)
     echo '<input id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" type="text" value="' . $value . '"><br />';
     echo '<label for="controlpanel_options_' . $id . '" class="controlpanel-label" style="opacity: 0.5; font-size: smaller">' . $label . '</label>';
 }
+function controlpanel_text_area_cb($args)
+{
+
+    $options = get_option('controlpanel_options', controlpanel_options_default());
+
+    $id    = isset($args['id'])    ? $args['id']    : '';
+    $label = isset($args['label']) ? $args['label'] : '';
+    $value = isset($options[$id]) ? sanitize_text_field($options[$id]) : '';
+
+
+    echo '<textarea id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" value="' . $value . '" rows="5" cols="70"> </textarea><br />';
+    echo '<label for="controlpanel_options_' . $id . '" class="controlpanel-label" style="opacity: 0.5; font-size: smaller">' . $label . '</label>';
+}
