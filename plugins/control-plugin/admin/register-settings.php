@@ -51,5 +51,38 @@ function controlpanel_register_settings()
         'controlpanel_section_bnb',
         ['id' => 'text_speed', 'label' => 'min: 10s | max: 100s']
     );
+    add_settings_field(
+        'pseudo_name',
+        'Pseudo name',
+        'controlpanel_bnb_color_cb',
+        'controlpanel',
+        'conrolpanel_section_author_desc',
+        ['id' => 'pseudo_name', 'label' => 'Choose a pseudo name to display']
+    );
+    add_settings_field(
+        'font_color',
+        'Font Color',
+        'controlpanel_bnb_color_cb',
+        'controlpanel',
+        'conrolpanel_section_author_desc',
+        ['id' => 'font_color', 'label' => 'Choose a font color']
+    );
+    add_settings_field(
+        'description',
+        'Description',
+        'controlpanel_bnb_color_cb',
+        'controlpanel',
+        'conrolpanel_section_author_desc',
+        ['id' => 'description', 'label' => 'Add your own description']
+    );
+    add_settings_field(
+        'avatar',
+        'Avatar',
+        'controlpanel_bnb_color_cb',
+        'controlpanel',
+        'conrolpanel_section_author_desc',
+        ['id' => 'avatar', 'label' => 'Add your own Avatar']
+    );
 }
+
 add_action('admin_init', 'controlpanel_register_settings');
