@@ -53,7 +53,7 @@ BREAKING NEWS BAR STYLING
   display: flex;
   flex-direction: row;
 }
-
+/*PULSING KEY FRAME*/
 @keyframes fadeIn {
   100% {
     opacity: 1;

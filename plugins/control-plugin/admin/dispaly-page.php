@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-
+// DISPLAY FUNCTION
 function controlpanel_display_page()
 {
     // Check if user is authorised for access
