@@ -60,12 +60,12 @@ function controlpanel_register_settings()
         ['id' => 'pseudo_name', 'label' => 'Choose a pseudo name to display']
     );
     add_settings_field(
-        'font_color',
+        'pseudo_font_color',
         'Font Color',
         'controlpanel_bnb_color_cb',
         'controlpanel',
         'conrolpanel_section_author_desc',
-        ['id' => 'font_color', 'label' => 'Choose a font color']
+        ['id' => 'pseudo_font_color', 'label' => 'Choose a font color']
     );
     add_settings_field(
         'description',
@@ -74,6 +74,14 @@ function controlpanel_register_settings()
         'controlpanel',
         'conrolpanel_section_author_desc',
         ['id' => 'description', 'label' => 'Add your own description']
+    );
+    add_settings_field(
+        'avatar_font_color',
+        'Font Color',
+        'controlpanel_bnb_color_cb',
+        'controlpanel',
+        'conrolpanel_section_author_desc',
+        ['id' => 'avatar_font_color', 'label' => 'Choose a font color for description']
     );
     add_settings_field(
         'avatar',
