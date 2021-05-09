@@ -17,7 +17,7 @@ function controlpanel_display_page()
         <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
         <form action="options.php" method="post">
             <?php
-            //output security fields
+            //output fields
             settings_fields('controlpanel_options');
             //output setting sections
             do_settings_sections('controlpanel');
@@ -26,7 +26,6 @@ function controlpanel_display_page()
             ?>
 
         </form>
-        <button class="button button-secondry">Reset the wole thing</button>
     </div>
 
 <?php };

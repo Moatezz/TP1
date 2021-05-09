@@ -95,7 +95,7 @@ function author_desc_test()
             $data = get_user_meta($id);
             $avatar_url = get_avatar_url($id);
 
-            echo '<img class="post-desc-avatar" src="' . conditional($options['avatar'], $avatar_url) . '" />';
+            echo '<img class="post-desc-avatar" src="' . conditional($options['avatar_url'], $avatar_url) . '" />';
 
             echo '<div class="post-desc-name" style="color: ' . $options['pseudo_font_color'] . '">' . conditional($options['pseudo_name'], $data['first_name'][0] . " " . $data['last_name'][0]) . '</div>';
             ?>
