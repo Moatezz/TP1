@@ -9,11 +9,11 @@ function controlpanel_vaildate_options($input)
 }
 function controlpanel_cb_bnb()
 {
-    echo 'anydhing';
+    echo 'Here you can adjust multiple settings for the Breaking News Bar';
 }
 function controlpanel_cb_author_desc()
 {
-    echo 'anydhing';
+    echo 'Here you can adjust multiple settings for the Author Description';
 }
 function control_panel_bnb_color_cb($args)
 {
@@ -21,7 +21,6 @@ function control_panel_bnb_color_cb($args)
 
     $id    = isset($args['id'])    ? $args['id']    : '';
     $label = isset($args['label']) ? $args['label'] : '';
-
     $value = isset($options[$id]) ? sanitize_text_field($options[$id]) : '';
 
 
