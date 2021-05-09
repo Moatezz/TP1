@@ -35,7 +35,7 @@ function controlpanel_register_settings()
         'controlpanel_color_cb',
         'controlpanel',
         'controlpanel_section_bnb',
-        ['id' => 'bnb_font_color', 'label' => 'Choose a font color']
+        ['id' => 'static_font_color', 'label' => 'Choose a font color']
     );
     add_settings_field(
         'animated_font_color',
@@ -43,7 +43,7 @@ function controlpanel_register_settings()
         'controlpanel_color_cb',
         'controlpanel',
         'controlpanel_section_bnb',
-        ['id' => 'font_color', 'label' => 'Choose a font color']
+        ['id' => 'animated_font_color', 'label' => 'Choose a font color']
     );
     add_settings_field(
         'text_speed',
@@ -92,7 +92,7 @@ function controlpanel_register_settings()
         'controlpanel_text_field_cb',
         'controlpanel',
         'conrolpanel_section_author_desc',
-        ['id' => 'Avatar_url', 'label' => 'Add your own Avatar URL']
+        ['id' => 'avatar_url', 'label' => 'Add your own Avatar URL']
     );
 }
 
