@@ -27,15 +27,16 @@ function controlpanel_bnb_color_cb($args)
     echo '<input id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" type="color" value="' . $value . '"><br />';
     echo '<label for="controlpanel_options_' . $id . '" class="controlpanel-label" style="opacity: 0.5; font-size: smaller">' . $label . '</label>';
 }
-function contorlpanel_bnb_speed_cb($args)
+function controlpanel_bnb_range_cb($args)
 {
+
     $options = get_option('controlpanel_options', controlpanel_options_default());
 
     $id    = isset($args['id'])    ? $args['id']    : '';
     $label = isset($args['label']) ? $args['label'] : '';
     $value = isset($options[$id]) ? sanitize_text_field($options[$id]) : '';
+    //var_dump($id);
 
-
-    echo '<input id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" type="range" value="' . $value . '"><br />';
+    echo '<input id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" type="range" min="10" max="100" value="' . $value . '"><br />';
     echo '<label for="controlpanel_options_' . $id . '" class="controlpanel-label" style="opacity: 0.5; font-size: smaller">' . $label . '</label>';
 }
