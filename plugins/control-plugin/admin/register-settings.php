@@ -84,12 +84,12 @@ function controlpanel_register_settings()
         ['id' => 'desc_font_color', 'label' => 'Choose a font color for description']
     );
     add_settings_field(
-        'avatar_url',
+        'kakavatar_ssurl',
         'Avatar URL',
         'controlpanel_text_field_cb',
         'controlpanel',
         'conrolpanel_section_author_desc',
-        ['id' => 'avatar', 'label' => 'Add your own Avatar URL']
+        ['id' => 'kakavatar_ssurl', 'label' => 'Add your own Avatar URL']
     );
 }
 

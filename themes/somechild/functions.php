@@ -79,6 +79,11 @@ function author_description()
 // author description test function
 function author_desc_test()
 {
+    function conditional($option, $alt)
+    {
+        if ($option === '') return $alt;
+        else return $option;
+    }
 ?>
     <!-- Author Description Area START HERE -->
     <div class="post-desc">
@@ -90,15 +95,15 @@ function author_desc_test()
             $data = get_user_meta($id);
             $avatar_url = get_avatar_url($id);
 
-            echo '<img class="post-desc-avatar" src="' . $avatar_url . '" />';
+            echo '<img class="post-desc-avatar" src="' . conditional($options['avatar'], $avatar_url) . '" />';
 
-            echo '<div class="post-desc-name" style="color: ' . $options['pseudo_font_color'] . '">' . $data['first_name'][0] . " " . $data['last_name'][0] . '</div>';
+            echo '<div class="post-desc-name" style="color: ' . $options['pseudo_font_color'] . '">' . conditional($options['pseudo_name'], $data['first_name'][0] . " " . $data['last_name'][0]) . '</div>';
             ?>
 
         </div>
         <div class='post-desc-divider'></div>
         <?php
-        echo '<div  class="post-desc-desc" style=" color: ' . $options['desc_font_color'] . '">' . $data['description'][0] . '</div>';
+        echo '<div  class="post-desc-desc" style=" color: ' . $options['desc_font_color'] . '">' . conditional($options['description'], $data['description'][0]) . '</div>';
         ?>
 
 

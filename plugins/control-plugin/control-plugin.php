@@ -34,7 +34,7 @@ function controlpanel_options_default()
         'pseudo_font_color' => 'black',
         'description' => '',
         'desc_font_color' => 'black',
-        'avatar_url' => ''
+        'avatar' => 's',
     );
 }
 //var_dump(controlpanel_options_default());
