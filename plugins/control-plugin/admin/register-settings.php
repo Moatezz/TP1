@@ -6,7 +6,6 @@ function controlpanel_register_settings()
     register_setting(
         'controlpanel_options',
         'controlpanel_options',
-        'controlpanel_vaildate_options'
     );
     //SECTIONS
     add_settings_section(
