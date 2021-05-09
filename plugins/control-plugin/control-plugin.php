@@ -24,11 +24,17 @@ function controlpanel_options_default()
     return array(
         //Breaking news bar defaults
         'bg_color' => 'red',
-        'bnb_font_color' => 'white',
+        'static_font_color' => 'white',
+        'animated_font_color' => 'white',
         'text_speed' => 30,
+
+
         //Author description defaults
+        'pseudo_name' => '',
         'pseudo_font_color' => 'black',
-        'desc_font_color' => 'black'
+        'description' => '',
+        'desc_font_color' => 'black',
+        'avatar_url' => ''
     );
 }
 //var_dump(controlpanel_options_default());
