@@ -46,6 +46,10 @@
   margin: 0 1rem;
   color: white;
 }
+.bnb-text {
+  display: flex;
+  flex-direction: row;
+}
 
 @keyframes fadeIn {
   100% {

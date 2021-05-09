@@ -30,13 +30,6 @@ function bnb_test()
 ?>
     <!-- START Breaking News Bar -->
     <style>
-        .bnb-text {
-            display: flex;
-            flex-direction: row;
-            animation: horizontalText 30s linear infinite;
-
-        }
-
         @keyframes horizontalText {
             to {
                 transform: translateX(-100%);
