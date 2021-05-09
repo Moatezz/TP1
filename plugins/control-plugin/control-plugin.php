@@ -11,14 +11,14 @@ if (!defined('ABSPATH')) {
 
     exit;
 }
-
+// REQUIRING DEPENDENCIES
 if (is_admin()) {
     require_once plugin_dir_path(__FILE__) . 'admin/admin-menu.php';
     require_once plugin_dir_path(__FILE__) . 'admin/dispaly-page.php';
     require_once plugin_dir_path(__FILE__) . 'admin/register-settings.php';
     require_once plugin_dir_path(__FILE__) . 'admin/callbacks.php';
 }
-
+// DEFAULT OPTIONS
 function controlpanel_options_default()
 {
     return array(
@@ -37,4 +37,3 @@ function controlpanel_options_default()
         'avatar' => 's',
     );
 }
-//var_dump(controlpanel_options_default());
