@@ -10,6 +10,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+/**************************
+BREAKING NEWS BAR STYLING
+***************************/
 .global-nav-container {
   display: flex;
   flex-direction: column;
@@ -59,9 +62,9 @@
     opacity: 0.5;
   }
 }
-/***********************
-POST DESCRIPTION STYLING
-************************/
+/**************************
+AUTHOR DESCRIPTION STYLING
+***************************/
 .post-desc-flex-container {
   display: flex;
   flex-direction: row;
@@ -71,7 +74,6 @@ POST DESCRIPTION STYLING
   font-size: 2rem;
   margin-left: 1rem;
   font-family: 'Lobster', cursive;
-  opacity: 0.7;
 }
 
 .post-desc-avatar {
@@ -89,5 +91,4 @@ POST DESCRIPTION STYLING
 .post-desc-desc {
   text-indent: 1rem;
   width: 50%;
-  opacity: 0.6;
 }
