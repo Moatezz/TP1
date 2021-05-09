@@ -2,11 +2,13 @@
 
 function controlpanel_register_settings()
 {
+    //SETTINGS
     register_setting(
         'controlpanel_options',
         'controlpanel_options',
         'controlpanel_vaildate_options'
     );
+    //SECTIONS
     add_settings_section(
         'controlpanel_section_bnb',
         'Breaking News Bar',
@@ -19,6 +21,7 @@ function controlpanel_register_settings()
         'controlpanel_cb_author_desc',
         'controlpanel'
     );
+    //BREAKING NEWS BAR FIELDS
     add_settings_field(
         'bg_color',
         'Backgroud Color',
@@ -51,6 +54,7 @@ function controlpanel_register_settings()
         'controlpanel_section_bnb',
         ['id' => 'text_speed', 'label' => 'min: 10s | max: 100s']
     );
+    //AUTHOR DESCRIPTION FIELDS
     add_settings_field(
         'pseudo_name',
         'Pseudo name',
@@ -84,12 +88,12 @@ function controlpanel_register_settings()
         ['id' => 'desc_font_color', 'label' => 'Choose a font color for description']
     );
     add_settings_field(
-        'kakavatar_ssurl',
+        'avatar_url',
         'Avatar URL',
         'controlpanel_text_field_cb',
         'controlpanel',
         'conrolpanel_section_author_desc',
-        ['id' => 'kakavatar_ssurl', 'label' => 'Add your own Avatar URL']
+        ['id' => 'Avatar_url', 'label' => 'Add your own Avatar URL']
     );
 }
 
