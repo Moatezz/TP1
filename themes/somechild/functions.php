@@ -25,7 +25,7 @@ function breaking_news_bar()
 
 
 // bnb test function
-function bnb_test()
+function breaking_news_bar_markup()
 {
 ?>
     <!-- START Breaking News Bar -->
@@ -68,7 +68,7 @@ function bnb_test()
     <!-- END Breaking News Bar -->
 <?php
 }
-add_action('breaking_news_bar', 'bnb_test');
+add_action('breaking_news_bar', 'breaking_news_bar_markup');
 
 // Author Description hook
 function author_description()
@@ -77,7 +77,7 @@ function author_description()
 }
 
 // author description test function
-function author_desc_test()
+function author_description_markup()
 {
     function conditional($option, $alt)
     {
@@ -115,4 +115,4 @@ function author_desc_test()
     <!-- Author Description Area END HERE -->
 <?php
 }
-add_action('author_description', 'author_desc_test');
+add_action('author_description', 'author_description_markup');
