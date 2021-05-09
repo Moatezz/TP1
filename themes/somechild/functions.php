@@ -1,30 +1,37 @@
 <?php
+// Exit if accessed directely
+if (!defined('ABSPATH')) {
+
+    exit;
+}
+
+//LINKING STYLES AND SCRIPTS
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 function my_theme_enqueue_styles()
 {
-    $parenthandle = 'parent-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
+    $parenthandle = 'parent-style';
     $theme = wp_get_theme();
     wp_enqueue_style(
         $parenthandle,
         get_template_directory_uri() . '/style.css',
-        array(),  // if the parent theme code has a dependency, copy it to here
+        array(),
         $theme->parent()->get('Version')
     );
     wp_enqueue_style(
         'child-style',
         get_stylesheet_uri(),
         array($parenthandle),
-        $theme->get('Version') // this only works if you have Version in the style header
+        $theme->get('Version')
     );
 }
+
 // Breaking News bar hook
 function breaking_news_bar()
 {
     do_action('breaking_news_bar');
 }
 
-
-// bnb test function
+// BREAKING NEWS BAR MARKUP FUNCTION
 function breaking_news_bar_markup()
 {
 ?>
@@ -38,14 +45,11 @@ function breaking_news_bar_markup()
     </style>
     <?php
     $options = get_option('controlpanel_options', controlpanel_options_default());
-    echo '<div class="bnb-container" style="background-color: ' . $options['bg_color'] . '">';
-    echo '<div class="bnb-text-static-container" style="background-color: ' . $options['bg_color'] . '">';
-    echo '<p class="bnb-text-static" style="color: ' . $options['static_font_color'] . '">BREAKING NEWS</p>';
-
-
-
-    echo '</div>';
-    echo '<div class="bnb-text" style="animation: horizontalText ' . $options['text_speed'] . 's linear infinite;" >';
+    echo '<div class="bnb-container" style="background-color: ' . $options['bg_color'] . '">
+    <div class="bnb-text-static-container" style="background-color: ' . $options['bg_color'] . '">
+    <p class="bnb-text-static" style="color: ' . $options['static_font_color'] . '">BREAKING NEWS</p>
+    </div>
+    <div class="bnb-text" style="animation: horizontalText ' . $options['text_speed'] . 's linear infinite;" >';
     ?>
     <?php
     //Setting infinite post titles with the -1 value  
@@ -76,7 +80,7 @@ function author_description()
     do_action('author_description');
 }
 
-// author description test function
+// AUTHOR DESCRIPTION MARKUP FUNCTION
 function author_description_markup()
 {
     function conditional($option, $alt)
@@ -90,27 +94,23 @@ function author_description_markup()
         <div class='post-desc-divider'></div>
         <div class="post-desc-flex-container">
             <?php
+            // Querying necessary raw data
             $options = get_option('controlpanel_options', controlpanel_options_default());
             $id = get_the_author_meta('ID');
             $description = get_the_author_meta('user_description');
             $first_name = get_the_author_meta('first_name');
             $last_name = get_the_author_meta('first_name');
             $full_name = $first_name . ' ' . $last_name;
-            // var_dump($full_name);
             $avatar_url = get_avatar_url($id);
-
+            // Outputting first hand data
             echo '<img class="post-desc-avatar" src="' . conditional($options['avatar_url'], $avatar_url) . '" />';
-
             echo '<div class="post-desc-name" style="color: ' . $options['pseudo_font_color'] . '">' . conditional($options['pseudo_name'], $full_name) . '</div>';
             ?>
-
         </div>
         <div class='post-desc-divider'></div>
         <?php
         echo '<div  class="post-desc-desc" style=" color: ' . $options['desc_font_color'] . '">' . conditional($options['description'], $description) . '</div>';
         ?>
-
-
     </div>
     <!-- Author Description Area END HERE -->
 <?php
