@@ -25,5 +25,5 @@ function control_panel_bnb_color_cb($args)
 
 
     echo '<input id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" type="color" value="' . $value . '"><br />';
-    echo '<label for="controlpanel_options_' . $id . '">' . $label . '</label>';
+    echo '<label for="controlpanel_options_' . $id . '" class="controlpanel-label" style="opacity: 0.5; font-size: smaller">' . $label . '</label>';
 }

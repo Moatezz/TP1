@@ -25,7 +25,7 @@ function controlpanel_register_settings()
         'control_panel_bnb_color_cb',
         'controlpanel',
         'controlpanel_section_bnb',
-        ['id' => 'bg_color', 'label' => 'choose a background color:']
+        ['id' => 'bg_color', 'label' => 'Choose a background color']
     );
     add_settings_field(
         'font_color',
@@ -33,7 +33,7 @@ function controlpanel_register_settings()
         'control_panel_bnb_color_cb',
         'controlpanel',
         'controlpanel_section_bnb',
-        ['id' => 'font_color', 'label' => 'choose a font color:']
+        ['id' => 'font_color', 'label' => 'Choose a font color']
     );
 }
 add_action('admin_init', 'controlpanel_register_settings');
