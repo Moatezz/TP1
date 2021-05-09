@@ -81,7 +81,7 @@ function author_desc_test()
 {
     function conditional($option, $alt)
     {
-        if ($option === '') return $alt;
+        if ($option == '') return $alt;
         else return $option;
     }
 ?>
