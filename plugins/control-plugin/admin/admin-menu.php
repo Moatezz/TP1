@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 
     exit;
 }
-
+// ADDING MENU
 function controlpanel_toplevel_menu()
 {
     add_menu_page(
