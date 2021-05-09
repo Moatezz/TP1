@@ -88,19 +88,17 @@ function author_desc_test()
             $options = get_option('controlpanel_options', controlpanel_options_default());
             $id = get_the_author_ID();
             $data = get_user_meta($id);
-            $avatar = get_avatar_url($id);
+            $avatar_url = get_avatar_url($id);
 
-            echo '<img class="post-desc-avatar" src="' . $avatar . '" />';
+            echo '<img class="post-desc-avatar" src="' . $avatar_url . '" />';
 
-
-            var_dump($options['pseudo_font_color']);
             echo '<div class="post-desc-name" style="color: ' . $options['pseudo_font_color'] . '">' . $data['first_name'][0] . " " . $data['last_name'][0] . '</div>';
             ?>
 
         </div>
         <div class='post-desc-divider'></div>
         <?php
-        echo "<div  class='post-desc-desc'>" . $data['description'][0] . '</div>';
+        echo '<div  class="post-desc-desc" style=" color: ' . $options['desc_font_color'] . '">' . $data['description'][0] . '</div>';
         ?>
 
 
