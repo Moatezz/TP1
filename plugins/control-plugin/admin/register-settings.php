@@ -22,7 +22,7 @@ function controlpanel_register_settings()
     add_settings_field(
         'bg_color',
         'Backgroud Color',
-        'control_panel_bnb_color_cb',
+        'controlpanel_bnb_color_cb',
         'controlpanel',
         'controlpanel_section_bnb',
         ['id' => 'bg_color', 'label' => 'Choose a background color']
@@ -30,7 +30,7 @@ function controlpanel_register_settings()
     add_settings_field(
         'font_color',
         'Font Color',
-        'control_panel_bnb_color_cb',
+        'controlpanel_bnb_color_cb',
         'controlpanel',
         'controlpanel_section_bnb',
         ['id' => 'font_color', 'label' => 'Choose a font color']
@@ -38,7 +38,7 @@ function controlpanel_register_settings()
     add_settings_field(
         'animated_text_color',
         'Animated Text Color',
-        'control_panel_bnb_color_cb',
+        'controlpanel_bnb_color_cb',
         'controlpanel',
         'controlpanel_section_bnb',
         ['id' => 'font_color', 'label' => 'Choose a font color']
@@ -46,7 +46,7 @@ function controlpanel_register_settings()
     add_settings_field(
         'text_speed',
         'Text Speed',
-        'control_panel_bnb_range_cb',
+        'controlpanel_bnb_range_cb',
         'controlpanel',
         'controlpanel_section_bnb',
         ['id' => 'text_speed', 'label' => 'speed is by seconds']

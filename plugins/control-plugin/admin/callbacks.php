@@ -15,7 +15,7 @@ function controlpanel_cb_author_desc()
 {
     echo 'Here you can adjust multiple settings for the Author Description';
 }
-function control_panel_bnb_color_cb($args)
+function controlpanel_bnb_color_cb($args)
 {
     $options = get_option('controlpanel_options', controlpanel_options_default());
 
