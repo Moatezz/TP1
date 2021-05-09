@@ -40,7 +40,7 @@ function bnb_test()
     $options = get_option('controlpanel_options', controlpanel_options_default());
     echo '<div class="bnb-container" style="background-color: ' . $options['bg_color'] . '">';
     echo '<div class="bnb-text-static-container" style="background-color: ' . $options['bg_color'] . '">';
-    echo '<p class="bnb-text-static" style="color: ' . $options['font_color'] . '">BREAKING NEWS</p>';
+    echo '<p class="bnb-text-static" style="color: ' . $options['static_font_color'] . '">BREAKING NEWS</p>';
 
 
 
@@ -58,7 +58,7 @@ function bnb_test()
     function dumping($target)
     {
         $options = get_option('controlpanel_options', controlpanel_options_default());
-        echo '<div class="bnb-text-target"  style="color: ' . $options['font_color'] . '">' . $target->post_title . '</div>';
+        echo '<div class="bnb-text-target"  style="color: ' . $options['animated_font_color'] . '">' . $target->post_title . '</div>';
     }
     //Mapping every post list.
     array_map('dumping', $posts_list)
@@ -85,16 +85,16 @@ function author_desc_test()
         <div class='post-desc-divider'></div>
         <div class="post-desc-flex-container">
             <?php
+            $options = get_option('controlpanel_options', controlpanel_options_default());
             $id = get_the_author_ID();
             $data = get_user_meta($id);
             $avatar = get_avatar_url($id);
 
-            //var_dump($test);
-            echo '<img class="post-desc-avatar" src="' . $avatar . '" />'
-            ?>
+            echo '<img class="post-desc-avatar" src="' . $avatar . '" />';
 
-            <?php
-            echo "<div  class='post-desc-name'>" . $data['first_name'][0] . " " .  $data['last_name'][0] . '</div>';
+
+            var_dump($options['pseudo_font_color']);
+            echo '<div class="post-desc-name" style="color: ' . $options['pseudo_font_color'] . '">' . $data['first_name'][0] . " " . $data['last_name'][0] . '</div>';
             ?>
 
         </div>
@@ -105,7 +105,7 @@ function author_desc_test()
 
 
     </div>
-    <!-- Author Description Area START HERE -->
+    <!-- Author Description Area END HERE -->
 <?php
 }
 add_action('author_description', 'author_desc_test');
