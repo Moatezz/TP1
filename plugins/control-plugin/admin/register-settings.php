@@ -49,7 +49,7 @@ function controlpanel_register_settings()
         'controlpanel_bnb_range_cb',
         'controlpanel',
         'controlpanel_section_bnb',
-        ['id' => 'text_speed', 'label' => 'speed is by seconds']
+        ['id' => 'text_speed', 'label' => 'min: 10s | max: 100s']
     );
 }
 add_action('admin_init', 'controlpanel_register_settings');
