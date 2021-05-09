@@ -29,33 +29,47 @@ function bnb_test()
 {
 ?>
     <!-- START Breaking News Bar -->
+    <style>
+        .bnb-text {
+            display: flex;
+            flex-direction: row;
+            animation: horizontalText 30s linear infinite;
 
+        }
+
+        @keyframes horizontalText {
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
     <?php
     $options = get_option('controlpanel_options', controlpanel_options_default());
     echo '<div class="bnb-container" style="background-color: ' . $options['bg_color'] . '">';
     echo '<div class="bnb-text-static-container" style="background-color: ' . $options['bg_color'] . '">';
-    echo '<p class="bnb-text-static" style="color: ' . $options['font_color'] . '">BREAKING NEWS</p>'
+    echo '<p class="bnb-text-static" style="color: ' . $options['font_color'] . '">BREAKING NEWS</p>';
 
 
+
+    echo '</div>';
+    echo '<div class="bnb-text" style="animation: horizontalText ' . $options['text_speed'] . 's linear infinite;" >';
     ?>
-    </div>
-    <div class='bnb-text'>
-        <?php
-        //Setting infinite post titles with the -1 value  
-        $args = array(
-            'numberposts' => -1
-        );
-        // Using get_posts to query all post titles
-        $posts_list = get_posts($args);
-        // duming() is the function responsable to wrap up every post_title when it is being mapped.
-        function dumping($target)
-        {
-            $options = get_option('controlpanel_options', controlpanel_options_default());
-            echo '<div class="bnb-text-target"  style="color: ' . $options['font_color'] . '">' . $target->post_title . '</div>';
-        }
-        //Mapping every post list.
-        array_map('dumping', $posts_list)
-        ?>
+    <?php
+    //Setting infinite post titles with the -1 value  
+    $args = array(
+        'numberposts' => -1
+    );
+    // Using get_posts to query all post titles
+    $posts_list = get_posts($args);
+    // duming() is the function responsable to wrap up every post_title when it is being mapped.
+    function dumping($target)
+    {
+        $options = get_option('controlpanel_options', controlpanel_options_default());
+        echo '<div class="bnb-text-target"  style="color: ' . $options['font_color'] . '">' . $target->post_title . '</div>';
+    }
+    //Mapping every post list.
+    array_map('dumping', $posts_list)
+    ?>
     </div>
     </div>
     <!-- END Breaking News Bar -->

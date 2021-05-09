@@ -40,20 +40,11 @@
   min-width: max-content;
   animation: fadeIn ease-in-out 0.5s infinite;
 }
-.bnb-text {
-  display: flex;
-  flex-direction: row;
-  animation: horizontalText 30s linear infinite;
-}
+
 .bnb-text-target {
   min-width: max-content;
   margin: 0 1rem;
   color: white;
-}
-@keyframes horizontalText {
-  to {
-    transform: translateX(-100%);
-  }
 }
 
 @keyframes fadeIn {
