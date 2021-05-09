@@ -91,19 +91,23 @@ function author_desc_test()
         <div class="post-desc-flex-container">
             <?php
             $options = get_option('controlpanel_options', controlpanel_options_default());
-            $id = get_the_author_ID();
-            $data = get_user_meta($id);
+            $id = get_the_author_meta('ID');
+            $description = get_the_author_meta('user_description');
+            $first_name = get_the_author_meta('first_name');
+            $last_name = get_the_author_meta('first_name');
+            $full_name = $first_name . ' ' . $last_name;
+            // var_dump($full_name);
             $avatar_url = get_avatar_url($id);
 
             echo '<img class="post-desc-avatar" src="' . conditional($options['avatar_url'], $avatar_url) . '" />';
 
-            echo '<div class="post-desc-name" style="color: ' . $options['pseudo_font_color'] . '">' . conditional($options['pseudo_name'], $data['first_name'][0] . " " . $data['last_name'][0]) . '</div>';
+            echo '<div class="post-desc-name" style="color: ' . $options['pseudo_font_color'] . '">' . conditional($options['pseudo_name'], $full_name) . '</div>';
             ?>
 
         </div>
         <div class='post-desc-divider'></div>
         <?php
-        echo '<div  class="post-desc-desc" style=" color: ' . $options['desc_font_color'] . '">' . conditional($options['description'], $data['description'][0]) . '</div>';
+        echo '<div  class="post-desc-desc" style=" color: ' . $options['desc_font_color'] . '">' . conditional($options['description'], $description) . '</div>';
         ?>
 
 

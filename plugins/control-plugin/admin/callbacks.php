@@ -63,6 +63,6 @@ function controlpanel_text_area_cb($args)
     $value = isset($options[$id]) ? sanitize_text_field($options[$id]) : '';
 
 
-    echo '<textarea id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" value="' . $value . '" rows="5" cols="70"> </textarea><br />';
+    echo '<textarea id="controlpanel_options_' . $id . '" name="controlpanel_options[' . $id . ']" value="' . $value . '" rows="5" cols="70">' . $value . '</textarea><br />';
     echo '<label for="controlpanel_options_' . $id . '" class="controlpanel-label" style="opacity: 0.5; font-size: smaller">' . $label . '</label>';
 }
