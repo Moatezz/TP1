@@ -50,7 +50,8 @@ function bnb_test()
         // duming() is the function responsable to wrap up every post_title when it is being mapped.
         function dumping($target)
         {
-            echo "<div class='bnb-text-target'>" . $target->post_title . "</div>";
+            $options = get_option('controlpanel_options', controlpanel_options_default());
+            echo '<div class="bnb-text-target"  style="color: ' . $options['font_color'] . '">' . $target->post_title . '</div>';
         }
         //Mapping every post list.
         array_map('dumping', $posts_list)

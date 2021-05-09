@@ -35,5 +35,13 @@ function controlpanel_register_settings()
         'controlpanel_section_bnb',
         ['id' => 'font_color', 'label' => 'Choose a font color']
     );
+    add_settings_field(
+        'animated_text_color',
+        'Animated Text Color',
+        'control_panel_bnb_color_cb',
+        'controlpanel',
+        'controlpanel_section_bnb',
+        ['id' => 'font_color', 'label' => 'Choose a font color']
+    );
 }
 add_action('admin_init', 'controlpanel_register_settings');
